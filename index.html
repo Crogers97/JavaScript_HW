@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <title>Favourite Sports Stars</title>
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <form id= "new-star-form">
+        <div id= "form-wrapper">
+            <div class="form-star">
+                <label for="name" class="primary">Name</label>
+                <input type="text" id="name" required/>
+            </div>
+
+            <div class="form-star">
+                <label for="sport" class='primary'>Sport</label>
+                <select id="sport">
+                    <option value= "" disabled selected></option>
+                    <option value= "football">Football</option>
+                    <option value= "basketball">Basketball</option>
+                    <option value= "tennis">Tennis</option>
+                    
+                </select>
+            </div>
+
+            
+            <div class= "form-star">
+                <label for ="team" class="primary">Team</label>
+                <input type="text" id="team" required/>
+            </div>
+            </div>
+            <input type="submit" value="save"/>
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+
+    <h1>Sports Star List</h1>
+    <ul id="star-list"></ul>
+</body>
+</html>
